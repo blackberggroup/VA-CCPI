@@ -1,0 +1,24 @@
+#vs-hero { 
+
+    #drhci-connect {
+         /*background: linear-gradient(90deg, #D64424 0%, #850E23 100%); */
+         color: #fff;
+
+         .usa-button {
+              width: auto;
+              font-size: 18px;
+         }
+
+         @media (max-width: 640px) {
+              h1 {
+                  font-size: 32px;
+              }
+          }
+    }
+
+
+   h1{
+    color: red;
+   }
+
+}
