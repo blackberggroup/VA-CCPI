@@ -1,24 +1,23 @@
 #vs-hero { 
 
-    #drhci-connect {
-         /*background: linear-gradient(90deg, #D64424 0%, #850E23 100%); */
-         color: #fff;
+}
 
-         .usa-button {
-              width: auto;
-              font-size: 18px;
-         }
+.vs-hero-bgimage {
+    background: #111d31 url('/assets/img/vetsmile/chart-lines.png'); 
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
 
-         @media (max-width: 640px) {
-              h1 {
-                  font-size: 32px;
-              }
-          }
-    }
+  .full-vh {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
 
+}
 
-   h1{
-    color: red;
-   }
-
+.hero-learn-more{
+    width: auto;
 }
