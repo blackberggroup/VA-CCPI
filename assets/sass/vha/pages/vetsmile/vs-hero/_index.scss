@@ -1,23 +1,43 @@
 #vs-hero { 
-
 }
 
 .vs-hero-bgimage {
-    background: #111d31 url('../../assets/img/vetsmile/chart-lines.svg'); 
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-
-  .full-vh {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    min-height: 300px;
-
+  background: #111d31 url('../../assets/img/vetsmile/chart-lines.svg'); 
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 85% auto;
 }
 
-.hero-learn-more{
-    width: auto;
+/* Desktop styles */
+@media (min-width: 64em) {
+  .vs-hero-bgimage {
+
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 40em) and (max-width: 63.9375em) {
+  .vs-hero-bgimage {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 39.9375em) {
+  .vs-hero-bgimage {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+.full-vh {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+
+.hero-learn-more {
+  width: auto;
 }
