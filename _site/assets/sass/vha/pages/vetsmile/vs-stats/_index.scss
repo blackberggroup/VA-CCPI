@@ -1,11 +1,4 @@
 #vs-stats { 
-
-   h1{
-    color: green;
-   }
-
-
-
 }
 
 .vs-stats-r  {
@@ -20,3 +13,44 @@
    text-align: center;
 }
 
+.stat-img{
+   width: 126px;
+}
+
+
+
+/* Desktop styles */
+@media (min-width: 64em) {
+   .stats-num {
+      font-size: 64px;
+      line-height: 64px;
+   }
+ }
+ /* Tablet styles */
+ @media (min-width: 40em) and (max-width: 63.9375em) {
+   .stats-num {
+      font-size: 56px;
+      line-height: 60px;
+
+   }
+ }
+ /* Mobile styles */
+ @media (max-width: 39.9375em) {
+   .stats-num {
+   font-size: 48px;
+   line-height: 54px;
+   }
+   .vs-stats-r, .vs-stats-l  {
+      text-align: center;
+   }
+
+   .stat-img{
+      width: 126px;
+      display: block !important;
+      margin: 30px auto  40px !important;
+   }
+
+
+
+
+ }

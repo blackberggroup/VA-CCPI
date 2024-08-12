@@ -1,25 +1,38 @@
 #vs-hero { 
+  h1{
+    font-size: 56px;
+    line-height: 60px;
+  }
+  h2{
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .vs-hero-bgimage {
   background: #111d31 url('../../assets/img/vetsmile/chart-lines.svg'); 
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 85% auto;
+
 }
 
 /* Desktop styles */
 @media (min-width: 64em) {
   .vs-hero-bgimage {
-
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 85% auto;
   }
 }
 
 /* Tablet styles */
 @media (min-width: 40em) and (max-width: 63.9375em) {
   .vs-hero-bgimage {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 85% auto;
+    /*
     background-size: cover;
     background-position: center;
+    */
   }
 }
 
