@@ -1,14 +1,28 @@
-<section id="vs-hero">
-<div style="background: #111d31;">
-<div class="usa-banner__inner">
-    <div class="tablet:grid-col-12 grid-row">
-        <div class="hero-summit tablet:grid-col-12 padding-top-10" style="margin-left: 1rem;">
-            <h1 class="padding-bottom-0 margin-bottom-0 text-white text-left h1fs">Bridging the Dental Care<br> Gap for Veterans</h1>
-            <h2 class="padding-top-0 padding-bottom-0 margin-top-0 margin-bottom-0 text-white text-left h2fs">VETSmile's Mission to Serve</h2>
+<section id="vs-hero" class="usa-section vs-hero-bgimage full-vh">
+    <div class="grid-container grid-col-12">
+        <div class="grid-row">
+            <div class="tablet:grid-col-12">
+                <div class="hero-content">
+                    <h1 class="padding-bottom-0 margin-bottom-3 text-white text-left">Bridging the Dental Care<br> Gap for Veterans:</h1>
+                    <h2 class="padding-top-0 padding-bottom-0 margin-top-1 margin-bottom-0 text-white text-left text-semibold">VETSmile's Mission to Serve</h2>
+                    <a href="#learn-more" class="usa-button usa-button--accent-cool usa-button--big margin-top-7 font-mono-sm hero-learn-more">Learn More</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 </section>
 
-
+<script>
+    // get header size to adjust hero section to be 100vh minus header
+    document.addEventListener("DOMContentLoaded", function() {
+        function adjustSectionHeight() {
+            var header = document.getElementById('header-sizing'); 
+            var section = document.getElementById('vs-hero');
+            var headerHeight = header ? header.offsetHeight : 0;
+            section.style.height = `calc(100vh - ${headerHeight}px)`;
+        }
+    
+        adjustSectionHeight();
+        window.addEventListener('resize', adjustSectionHeight);
+    });
+    </script>
