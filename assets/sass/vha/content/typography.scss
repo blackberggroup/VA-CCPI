@@ -1,3 +1,4 @@
+@use "uswds-core" as *;
 @import "../../../../node_modules/rfs/scss";
 
 p {
@@ -24,4 +25,24 @@ h4, .h4 {
 .heading-subtitle {
     font-weight: bold;
     color: var(--red-8);
+}
+
+
+p.desc{
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+
+    @include at-media(mobile) {
+        font-size: 18px !important;
+        line-height: 29.16px;
+    }
+    @include at-media(tablet) {
+        font-size: 22px !important; 
+        line-height: 35.64px;
+    }
+    @include at-media(desktop-lg) {
+        font-size: 22px !important;
+        line-height: 35.64px
+    }
 }
