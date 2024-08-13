@@ -46,3 +46,15 @@ p.desc{
         line-height: 35.64px
     }
 }
+
+h3.stat-title{
+    @include at-media(mobile) {
+        font-size: 16px !important;
+    }
+    @include at-media(tablet) {
+        font-size: 22px !important; 
+    }
+    @include at-media(desktop-lg) {
+        font-size: 22px !important;
+    }
+}
