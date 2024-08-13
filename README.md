@@ -33,3 +33,16 @@ Develop Branch -
 1. Run gulp to watch any changes you make to `scss` files:
     ```bash
     gulp watch
+
+## In case of concurrent legacy and new web pages
+1. So that we don't overwrite the legacy "assets" directory, we will need to name the new "assets" directory "assets-3-5".
+
+1. Make a copy of the existing "assets" directory and rename it "assets-3-5"
+
+1. Change all paths in your code to point to "assets-3-5"
+
+1. When developing, you will need to remember to add any new images or documents to BOTH directories
+
+1. When changing `scss` files, you will need to manually copy the newly compiled styles.css into "assets-3-5" to see changes.
+
+1. Be sure to update the deploy script to include "assets-3-5" and exclude "assets" from _site
