@@ -1,12 +1,38 @@
 #vs-hero { 
+  /* Desktop styles */
+@media (min-width: 64em) {
   h1{
+    color: var(--Base-base-lightest, #F0F0F0);
     font-size: 56px;
-    line-height: 60px;
   }
   h2{
+    color: var(--Base-base-lightest, #F0F0F0);
     font-size: 40px;
-    line-height: 44px;
   }
+}
+
+/* Tablet styles */
+@media (min-width: 40em) and (max-width: 63.9375em) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 32px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 39.9375em) {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 22px;
+  }
+}
+
+
+
 }
 
 .vs-hero-bgimage {
