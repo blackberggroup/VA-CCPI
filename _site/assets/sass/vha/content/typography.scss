@@ -58,3 +58,19 @@ h3.stat-title{
         font-size: 22px !important;
     }
 }
+
+
+p.stats-contact{
+    @include at-media(mobile) {
+        font-size: 16px !important; 
+        line-height: 25.92px;
+    }
+    @include at-media(tablet) {
+        font-size: 16px !important; 
+        line-height: 25.92px;
+    }
+    @include at-media(desktop-lg) {
+        font-size: 22px !important;
+        line-height: 35.64px;
+    }
+}
