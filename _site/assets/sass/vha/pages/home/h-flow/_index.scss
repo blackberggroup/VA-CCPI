@@ -1,0 +1,38 @@
+#h-flow { 
+  
+}
+
+.flow-bg {
+    display: block;
+    background: 
+      /* Repeating background image */
+      url('../../../../assets/img/home/99.png') repeat,
+      
+      /* Gradient background color */
+      linear-gradient(135deg, rgba(40,94,157,1) 0%, rgba(40,94,157,1) 0%, rgba(28,47,80,1) 100%);
+  }
+  
+
+
+    /* Desktop styles */
+    @media (min-width: 64em) {
+
+      }
+      
+      /* Tablet styles */
+      @media (min-width: 40em) and (max-width: 63.9375em) {
+
+      }
+      
+      /* Mobile styles */
+      @media (max-width: 39.9375em) {
+
+      }
+
+
+
+     
+
+
+
+
