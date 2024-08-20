@@ -4,10 +4,6 @@
   
 }
 
-.pilot-card{
-    min-height: 244px !important;
-}
-
 .pilot-bg{
     min-height: 378px !important;
 }
@@ -31,6 +27,13 @@
             width: 306px;
             margin: 0 auto 40px;
         }
+        .r-b{
+            margin-top: 12px;
+          }
+          .r-box{
+            margin-top: -150px;
+
+        }
       }
       
       /* Tablet styles */
@@ -49,6 +52,35 @@
             width: 247px;
             margin: 0 auto 80px;
         }
+        .r-icon{
+            position: absolute;
+            left: 40px;
+            top:25px;
+        }
+        .r-text{
+            text-align: left;
+            padding-left: 120px;
+        }
+        .pilot-bg{
+            min-height: 575px !important;
+        }
+        .r-box{
+            margin-top: -350px;
+
+        }
+        .r-b{
+            margin-top: 0;
+            padding-top: 0;
+          }
+          .r-b-p{
+            padding: 20px;
+          }
+          .pilot-bg{
+            margin-top:0 !important;
+        }
+
+
+    
       }
       
       /* Mobile styles */
@@ -67,6 +99,27 @@
             height: 232px;
             width: 247px;
             margin: 0 auto 40px;
+        }
+        .r-icon{
+            position: absolute;
+            left: 40px;
+            top:30px;
+        }
+        .r-text{
+            text-align: left;
+            padding-left: 120px;
+        }  
+        .r-b{
+            margin-top: 0;
+            padding-top: 0;
+          }
+          .r-b-p{
+            padding: 20px;
+          }
+          .pilot-bg{
+            margin-top:0 !important;
+            background: white;
+            min-height: inherit !important;
         }
       }
 
@@ -94,8 +147,6 @@
     .flex-card-body {
         flex-grow: 1;
     }
-
-
 
 
 
