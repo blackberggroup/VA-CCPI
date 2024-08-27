@@ -8,7 +8,11 @@
 .usa-breadcrumb {
     color: #fff;
     margin-bottom: -4rem;
-    a {color: #fff;}
+    a, a:hover {color: #fff !important;}
+
+    // a:hover {
+    //     color: #fff;
+    // }
 }
 
 .alignment-protection {
