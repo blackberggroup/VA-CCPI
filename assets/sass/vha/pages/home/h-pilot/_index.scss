@@ -5,6 +5,115 @@
     min-height: 398px !important;
 }
 
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .flex-item {
+        display: flex;
+    }
+    
+    .flex-card {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-card-container {
+        flex-grow: 1;
+    }
+    
+    .flex-card-body {
+        flex-grow: 1;
+    }
+
+
+.circle-wrapper {
+    padding: 15px; 
+    border-radius: 50%;
+    border: 3px dashed #565c65; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+
+  .circle {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: rgb(28,149,237);
+    background: radial-gradient(circle, rgba(28,149,237,1) 53%, rgba(0,94,162,1) 63%, rgba(22,46,81,1) 69%, rgba(22,46,81,1) 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .circle__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    color: #1E4E8C;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .circle__inner p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+
+  .usa-card.r-1::after, .usa-card.r-2::after, .usa-card.r-3::after,  {
+    content: '';
+    position: absolute;
+    right: -400px; 
+    top: 50%;
+    width: 400px; 
+    height: 4px; 
+}
+
+.usa-card {
+    position: relative;
+}
+
+.usa-card.r-1::after {
+    background-color: #1c2e4f !important;
+
+}
+.usa-card.r-2::after {
+    background-color: #26437c !important; 
+
+}
+.usa-card.r-3::after {
+    background-color: #275d9d !important;
+
+
+}
+
+
+
+
+
     /* Desktop styles */
     @media (min-width: 64em) {
         h2{
@@ -28,7 +137,41 @@
             margin-top: -160px;
 
         }
-      }
+        .circle__inner p {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          .r-cir-right {
+            min-width: 460px;
+         
+          }
+          .cir-title{
+            display: inherit;
+          }
+          .cir-title2{
+            display: none;
+          }
+
+          }
+     
+
+
+          @media (max-width: 1200px) and (min-width: 63.9375em) {
+            .r-cir-right {
+                margin-left: -70px;
+             
+              }
+              .usa-card.r-1::after, .usa-card.r-2::after, .usa-card.r-3::after,  {
+                content: '';
+                position:absolute;
+                right: -300px !important; 
+                top: 50%;
+                width: 300px !important; 
+                height: 4px; 
+            }
+
+          }
+          
       
       /* Tablet styles */
       @media (min-width: 40em) and (max-width: 63.9375em) {
@@ -72,10 +215,58 @@
           .pilot-bg{
             margin-top:0 !important;
         }
+        .circle__inner p {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          .r-cir-right {
+            min-width: 430px;
+         
+          }
+          .cir-title{
+            display: inherit;
+          }
+          .cir-title2{
+            display: none;
+          }
 
+            .usa-card.r-1::after {
+                top: 85%;
+                background-color: #1c2e4f; 
 
+            }
+        .usa-card.r-3::after {
+                top: 15%;
+                background-color: #275d9d; 
+
+            }
     
       }
+
+
+      @media (max-width: 860px) and (min-width: 39.9375em) {
+        .r-cir-right {
+            margin-left: -70px;
+            
+         
+          }
+          .usa-card.r-1::after, .usa-card.r-2::after, .usa-card.r-3::after,  {
+            content: '';
+            right: -250px !important;
+            width: 250px !important;
+        }
+
+      }
+      @media (max-width: 800px) and (min-width: 39.9375em) {
+        .r-cir-right {
+            margin-top: 90px;
+            
+         
+          }
+
+      }
+
+
       
       /* Mobile styles */
       @media (max-width: 39.9375em) {
@@ -115,30 +306,39 @@
             background: white;
             min-height: inherit !important;
         }
-      }
+        .circle__inner p {
+            font-size: 32px;
+            line-height: 34px;
+          }
+          .circle-wrapper {
+        
+          }
+          .cir-title{
+            display: none;
+          }
+          .cir-title2{
+            display: inherit;
+          }
+        .usa-card.r-1::after, 
+        .usa-card.r-2::after, 
+        .usa-card.r-3::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 240px;
+        right: -250px !important;
+        width: 4px !important; 
+        z-index: -9999999;
+}
 
-    .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    
-    .flex-item {
-        display: flex;
-    }
-    
-    .flex-card {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .flex-card-container {
-        flex-grow: 1;
-    }
-    
-    .flex-card-body {
-        flex-grow: 1;
-    }
 
 
 
+
+
+
+
+
+}
