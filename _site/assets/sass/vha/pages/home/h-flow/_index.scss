@@ -29,8 +29,8 @@
       @media (min-width: 40em) and (max-width: 63.9375em) {
         .flow-p{
           color: white;
-          font-size: 16px;
-          line-height: 22px;
+          font-size: 16px !important;
+          line-height: 22px !important;
           font-weight: 600;
         }
 
@@ -62,8 +62,8 @@
       @media (max-width: 39.9375em) {
         .flow-p{
           color: white;
-          font-size: 16px;
-          line-height: 22px;
+          font-size: 16px !important;
+          line-height: 22px !important;
           font-weight: 600;
         }
         .rotate-arrow-mobile {
