@@ -8,11 +8,9 @@
 .usa-breadcrumb {
     color: #fff;
     margin-bottom: -4rem;
-    a, a:hover {color: #fff !important;}
-
-    // a:hover {
-    //     color: #fff;
-    // }
+    a, a:hover, a:visited {
+        color: #fff !important;
+    }
 }
 
 .alignment-protection {
@@ -40,9 +38,10 @@
     flex-direction: row;
 
     .usa-card__header {
-        padding: 1.5rem;
+        // padding: 1.5rem;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
         img {
-            min-width: 57px;
+            min-height: 60px;
         }
     }
 
