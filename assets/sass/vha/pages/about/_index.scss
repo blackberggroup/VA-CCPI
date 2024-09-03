@@ -1,0 +1,66 @@
+@use "uswds-core" as *;
+
+#page-title {
+    background: #0E1D33; 
+    color: #fff;
+}
+
+.usa-breadcrumb {
+    color: #fff;
+    margin-bottom: -4rem;
+    a, a:hover, a:visited {
+        color: #fff !important;
+    }
+}
+
+.alignment-protection {
+    background: #162E51;
+}
+
+.alignment-personalized-hc {
+    background: #1C3E69;
+}
+
+.alignment-medical-team {
+    background: #224876;
+}
+
+.alignment-medical-network {
+    background: #2B5182;
+}
+
+.alignment-veterans {
+    background: #32598A;
+}
+
+.usa-card__container {
+    
+    flex-direction: row;
+
+    .usa-card__header {
+        // padding: 1.5rem;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+        img {
+            min-height: 60px;
+        }
+    }
+
+    .usa-card__body {
+        text-align: left !important;
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    @include at-media(desktop) {
+        flex-direction: column;
+
+        .usa-card__header {
+            padding: 1.5rem 1.5rem .5rem;
+        }
+
+    
+        .usa-card__body {
+            text-align: center !important;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+    }   
+}

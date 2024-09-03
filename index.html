@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="VA Center for Care and Payment Innovation">
   <meta name="keywords" content="">
-  <title>VA Website Template</title>
+  <title>VA Center for Care and Payment Innovation</title>
 
   <meta property="og:title" content="((TITLE))">
   <meta property="og:url" content="((URL))">
@@ -28,13 +28,14 @@
     <!-- SITE WRAPPER - START -->
     <div class="site-wrapper">
       {% include "header.html" %}
+
+      <main>
+      {% include "home/hero.html" %}
+      {% include "home/pilot.html" %}
+      {% include "home/flow.html" %}
+      </main>
       
-        <main>
-            <div style="height: 200px;"></div>
-        </main>
-
-        {% include "footer.html" %}
-
+      {% include "footer.html" %}
     </div>
     <!-- SITE WRAPPER - END -->
 

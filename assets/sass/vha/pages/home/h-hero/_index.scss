@@ -1,0 +1,93 @@
+#h-hero { 
+  /* Desktop styles */
+@media (min-width: 64em) {
+  h1{
+    font-size: 56px;
+  }
+  h2{
+    font-size: 32px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 40em) and (max-width: 63.9375em) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 32px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 39.9375em) {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 22px;
+  }
+}
+
+
+}
+
+.h-hero-img{
+  max-width: inherit;
+}
+
+
+.h-hero-bgimage {
+  background:  url('../../assets/img/home/hero-glow.svg'); 
+
+}
+
+/* Desktop styles */
+@media (min-width: 64em) {
+  .h-hero-bgimage {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+}
+
+/* Tablet styles */
+@media (min-width: 40em) and (max-width: 63.9375em) {
+  .h-hero-bgimage {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 85% auto;
+    /*
+    background-size: cover;
+    background-position: center;
+    */
+  }
+  .h-hero-img{
+    max-width: 100%;
+  }
+
+  .r-h-image{
+    margin-top: -130px;
+    margin-left: 190px;
+  }
+
+}
+
+/* Mobile styles */
+@media (max-width: 39.9375em) {
+  .h-hero-bgimage {
+      background-size: cover;
+      background-position: center;
+  }
+  .h-hero-img{
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+
+
+.hero-learn-more {
+  width: auto;
+}
